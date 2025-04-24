@@ -1,0 +1,362 @@
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Estudos - Material Completo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 15px;
+            background-color: #8B0000;
+            color: white;
+            border-radius: 50px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(139, 0, 0, 0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .concept-box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-radius: The area of the figure is 41 square units.8px;
+            overflow: hidden;
+        }
+        
+        th {
+            background-color: #8B0000;
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-size: 14px;
+            position: sticky;
+            top: 0;
+        }
+        
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: middle;
+        }
+        
+        tr:hover {
+            background-color: #fff0f0;
+        }
+        
+        .disciplina {
+            background-color: #5a0000;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            width: 180px;
+        }
+        
+        .topico {
+            text-align: left;
+        }
+        
+        .revisao {
+            background-color: #fff8f8;
+            font-style: italic;
+        }
+        
+        .questoes {
+            text-align: center;
+            font-weight: bold;
+            color: #8B0000;
+            width: 120px;
+        }
+        
+        .link-caderno {
+            text-align: center;
+            width: 180px;
+        }
+        
+        .link-caderno a {
+            display: inline-block;
+            background-color: #8B0000;
+            color: white;
+            padding: 6px 12px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        
+        .link-caderno a:hover {
+            background-color: #6b0000;
+            transform: scale(1.05);
+        }
+        
+        .notas {
+            background-color: #fff0f0;
+            border-left: 5px solid #8B0000;
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .destaque {
+            color: #8B0000;
+            font-weight: bold;
+        }
+        
+        .prioridade-alta {
+            position: relative;
+        }
+        
+        .prioridade-alta::after {
+            content: "★";
+            color: #8B0000;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .recomendacoes {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .recomendacoes h2 {
+            color: #8B0000;
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        
+        .progresso {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .etapa {
+            text-align: center;
+            position: relative;
+            width: 18%;
+        }
+        
+        .etapa-circulo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #8B0000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 10px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+        
+        .etapa-linha {
+            height: 3px;
+            background-color: #8B0000;
+            position: absolute;
+            top: 30px;
+            width: 100%;
+            left: 50%;
+            z-index: -1;
+        }
+    </style>
+
+
+    <div class="container">
+        <h1>Revisão Por Questões</h1>
+        
+        <div class="concept-box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>Tópicos</th>
+                        <th>Links do Caderno</th>
+                        <th>Quantidade de Questões</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Informática -->
+                    <tr class="prioridade-alta">
+                        <td class="disciplina">Informática</td>
+                        <td class="topico">Redes de comunicação. Noções básicas de transmissão de dados. Redes de computadores.</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4OMOC" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">26</td>
+                    </tr>
+                    <tr>
+                        <td class="disciplina">Informática</td>
+                        <td class="topico">Rede de Computadores: Protocolos</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4OMS5" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">30</td>
+                    </tr>
+                    <tr class="revisao">
+                        <td class="disciplina">Informática</td>
+                        <td class="topico">Revisão Completa dos Tópicos</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4f8S9" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">34</td>
+                    </tr>
+                    
+                    <!-- Contabilidade -->
+                    <tr class="prioridade-alta">
+                        <td class="disciplina">Contabilidade</td>
+                        <td class="topico">Conceitos, objeto, finalidade. Teoria das Contas. Princípios Contábeis</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4WgOP" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">57</td>
+                    </tr>
+                    <tr class="revisao">
+                        <td class="disciplina">Contabilidade</td>
+                        <td class="topico">Revisão Completa dos Tópicos</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fXhP" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">40</td>
+                    </tr>
+                    
+                    <!-- Raciocínio Lógico -->
+                    <tr class="prioridade-alta">
+                        <td class="disciplina">Raciocínio Lógico</td>
+                        <td class="topico">Estruturas lógicas</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fQO1" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">30</td>
+                    </tr>
+                    <tr class="revisao">
+                        <td class="disciplina">Raciocínio Lógico</td>
+                        <td class="topico">Revisão Completa de Raciocínio Lógico</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fQGA" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">26</td>
+                    </tr>
+                    
+                    <!-- Estatística -->
+                    <tr class="prioridade-alta">
+                        <td class="disciplina">Estatística</td>
+                        <td class="topico">Medidas de Posição: Médias, Separatrizes, Moda.</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fiO7" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">30</td>
+                    </tr>
+                    <tr class="revisao">
+                        <td class="disciplina">Estatística</td>
+                        <td class="topico">Revisão Completa de Estatística</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fiE5" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">26</td>
+                    </tr>
+                    
+                    <!-- Português -->
+                    <tr class="prioridade-alta">
+                        <td class="disciplina">Português</td>
+                        <td class="topico">Classes Gramaticais - substantivos, adjetivos, advérbios, artigos, numerais, interjeições</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fdtp" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">24</td>
+                    </tr>
+                    <tr>
+                        <td class="disciplina">Português</td>
+                        <td class="topico">Interpretação de textos.</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fdvT" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">30</td>
+                    </tr>
+                    <tr class="revisao">
+                        <td class="disciplina">Português</td>
+                        <td class="topico">Revisão Completa de Português</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fiBg" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">30</td>
+                    </tr>
+                    
+                    <!-- Direito Processual Penal -->
+                    <tr>
+                        <td class="disciplina">Direito Processual Penal</td>
+                        <td class="topico">Inquérito Policial.</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fQA3" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">25</td>
+                    </tr>
+                    
+                    <!-- Direito Penal -->
+                    <tr>
+                        <td class="disciplina">Direito Penal</td>
+                        <td class="topico">Princípios do Direito Penal. Conceitos e fontes do Direito Penal</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fuG9" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">25</td>
+                    </tr>
+                    
+                    <!-- Direito Constitucional -->
+                    <tr>
+                        <td class="disciplina">Direito Constitucional</td>
+                        <td class="topico">Princípios fundamentais.Direitos e garantias fundamentais. Direitos e deveres individuais e coletivos</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fi1s" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">30</td>
+                    </tr>
+                    
+                    <!-- Direito Administrativo -->
+                    <tr>
+                        <td class="disciplina">Direito Administrativo</td>
+                        <td class="topico">Ato Administrativo</td>
+                        <td class="link-caderno"><a href="https://www.tecconcursos.com.br/s/Q4fiKz" target="_blank">Acessar Caderno</a></td>
+                        <td class="questoes">30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="recomendacoes">
+            <h2>Recomendações de Estudo</h2>
+            
+            <div class="notas">
+                <p><span class="destaque">Priorização:</span> Foque principalmente nas disciplinas de Português, Raciocínio Lógico, Estatística, Contabilidade e Informática, que representam 90% da nota final da prova.</p>
+                
+                <p><span class="destaque">Sobre as Revisões Completas:</span> Os cadernos marcados como "Revisão Completa dos Tópicos" são para você se ambientalizar com a prova. Não se preocupe com o desempenho nestes exercícios, o objetivo é se acostumar com a cobrança de diversos assuntos em uma única bateria de questões.</p>
+            </div>
+            
+            <div class="progresso">
+                <div class="etapa">
+                    <div class="etapa-circulo">1</div>
+                    <p>Estudo Teórico</p>
+                </div>
+                <div class="etapa">
+                    <div class="etapa-circulo">2</div>
+                    <div class="etapa-linha"></div>
+                    <p>Questões Específicas</p>
+                </div>
+                <div class="etapa">
+                    <div class="etapa-circulo">3</div>
+                    <div class="etapa-linha"></div>
+                    <p>Revisões Completas</p>
+                </div>
+                <div class="etapa">
+                    <div class="etapa-circulo">4</div>
+                    <div class="etapa-linha"></div>
+                    <p>Simulados</p>
+                </div>
+                <div class="etapa">
+                    <div class="etapa-circulo">5</div>
+                    <div class="etapa-linha"></div>
+                    <p>Aprovação</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
